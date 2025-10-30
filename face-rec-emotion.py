@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-import dlib
+import dlib     # hog and cnn
 from imutils import face_utils
 from keras.models import load_model
 import face_recognition
@@ -36,47 +36,32 @@ emotion_target_size = emotion_classifier.input_shape[1:3]
 emotion_window = []
 
 # Load a sample picture and learn how to recognize it.
-obama_image = face_recognition.load_image_file("images/Obama.jpg")
-obama_face_encoding = face_recognition.face_encodings(obama_image)[0]
+kshitiz_image = face_recognition.load_image_file("images/Kshitiz.jpg")
+kshitiz_face_encoding = face_recognition.face_encodings(kshitiz_image)[0]
 
 # Load a second sample picture and learn how to recognize it.
-trump_image = face_recognition.load_image_file("images/Trump.jpeg")
-trump_face_encoding = face_recognition.face_encodings(trump_image)[0]
+sandesh_image = face_recognition.load_image_file("images/Sandesh.jpeg")
+sandesh_face_encoding = face_recognition.face_encodings(sandesh_image)[0]
 
-modi_image = face_recognition.load_image_file("images/Modi.jpg")
-modi_face_encoding = face_recognition.face_encodings(modi_image)[0]
+jay_image = face_recognition.load_image_file("images/Jay.jpg")
+jay_face_encoding = face_recognition.face_encodings(jay_image)[0]
 
 aryan_image = face_recognition.load_image_file("images/aryan.jpg")
 aryan_face_encoding = face_recognition.face_encodings(aryan_image)[0]
 
-kshitiz_image = face_recognition.load_image_file("images/Kshitiz.jpeg")
-kshitiz_face_encoding = face_recognition.face_encodings(kshitiz_image)[0]
-
-jay_image = face_recognition.load_image_file("images/Jay.jpeg")
-jay_face_encoding = face_recognition.face_encodings(jay_image)[0]
-
-sandesh_image = face_recognition.load_image_file("images/Sandesh.jpeg")
-sandesh_face_encoding = face_recognition.face_encodings(sandesh_image)[0]
-
 
 # Create arrays of known face encodings and their names
 known_face_encodings = [
-    obama_face_encoding,
-    trump_face_encoding,
-    modi_face_encoding,
-    aryan_face_encoding,
     kshitiz_face_encoding,
+    sandesh_face_encoding,
     jay_face_encoding,
-    sandesh_face_encoding
+    aryan_face_encoding
 ]
 known_face_names = [
-    "Barack Obama",
-    "Trump",
-    "Modi",
-    "aryan",
     "Kshitiz",
+    "Sandesh",
     "Jay",
-    "Sandesh"
+    "Aryan"
 ]
 
 # Initialize some variables
