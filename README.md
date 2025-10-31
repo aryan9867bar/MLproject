@@ -72,7 +72,7 @@ Create a new environment named `facerec` and activate it:
 ```bash
 conda create -n facerec python=3.10
 conda activate facerec
-
+```
 
 ---
 
@@ -82,7 +82,7 @@ Install the essential Python libraries:
 
 ```bash
 pip install opencv-python tensorflow keras numpy pandas matplotlib
-
+```
 💡 Add any other dependencies if required.
 
 ---
@@ -93,6 +93,7 @@ Once all dependencies are installed, run the project using the following command
 
 ```bash
 /opt/anaconda3/envs/facerec/bin/python "/Users/apple/Documents/E Drive/FacialEmotion/face-rec-emotion.py"
+```
 
 💡 Tip: You can also open the script in your IDE (like VS Code or Jupyter Notebook) and run it directly.
 
@@ -134,6 +135,7 @@ Once all dependencies are installed, run the project using the following command
 ## 🔮 Future Improvements
 
 In the future, this project can be enhanced by improving model accuracy using larger and more diverse datasets. Real-time performance can be optimized with GPU acceleration and faster frame processing. Additionally, integrating transfer learning and building a web or mobile interface will make the system more powerful and user-friendly.
+
 
 ## 📜 License
 
