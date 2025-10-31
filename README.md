@@ -74,13 +74,18 @@ conda create -n facerec python=3.10
 conda activate facerec
 
 
+---
+
 ### 📚 3. Install Required Libraries
+
 Install the essential Python libraries:
 
 ```bash
 pip install opencv-python tensorflow keras numpy pandas matplotlib
 
 💡 Add any other dependencies if required.
+
+---
 
 ### 📦 4. Run the Project
 
@@ -91,6 +96,7 @@ Once all dependencies are installed, run the project using the following command
 
 💡 Tip: You can also open the script in your IDE (like VS Code or Jupyter Notebook) and run it directly.
 
+---
 
 ## ✅ 5. Output
 
@@ -99,6 +105,7 @@ Once all dependencies are installed, run the project using the following command
 - The program will open your webcam and detect facial emotions in real time.
 - Detected emotions such as Happy, Sad, Angry, Surprise, and Neutral will be displayed on the screen with bounding boxes and labels.
 
+---
 
 ## 🧠 Technical Details
 
